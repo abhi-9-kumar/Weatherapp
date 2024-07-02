@@ -92,6 +92,7 @@ form input[type="text"] {
 
 .location {
   margin-bottom: 1vw;
+  padding-left:10vw;
 }
 
 .city {
@@ -112,6 +113,7 @@ form input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top:0;
 }
 
 .icon img {
