@@ -1,35 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Weather App</h1>
-      <form>
-        <input type="text" id="city-input" placeholder="Enter City" />
-        <input type="submit" value="Get Weather" />
-      </form>
-      <div id="weather-data">
-        <div class="icon">
-          <!-- <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+</head>
+<body>
+    <div id="main">
+        <video autoplay loop muted src="./cloudy-day-moewalls-com.mp4"></video>
+        
+        <div class="background"></div>
+        
+        <div class="container">
+            <h1>Weather Report</h1>  
+            <br>
+            <br>      
+            <div id="search">
+                <form id="weather-form">
+                    <input type="text" id="city-input" placeholder="Search city...">
+                    <button><i class="ri-search-line"></i></button>
+                </form>
+            </div>
         </div>
-        <div class="temperature"></div>
-        <div class="description"></div>
-        <div class="details">
-          <!-- <div>Feels like: 23°C</div>
-                <div>Humidity: 40%</div>
-                <div>Wind speed: 5 m/s</div> -->
+        
+        <div id="weather-data" class="weather-data">
+            <div class="location">
+                <h2 class="city"></h2>
+                <div class="date-time"></div>
+            </div>
+            <div class="current-weather">
+                <div class="icon"></div>
+                <div class="temperature"></div>
+                <div class="description"></div>
+            </div>
+            <div class="details">
+                <div class="detail">Precipitation : <span class="precipitation"></span>
+                <img src="precipitation.png" alt="">
+                </div>
+                <div class="detail">Humidity : <span class="humidity"></span>
+                <img src="humidity.png" alt="">
+                </div>
+                <div class="detail">Feels Like : <span class="feels-like"></span>
+                <img src="feels.png" alt="">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+    
     <script src="weather.js"></script>
-  </body>
+</body>
 </html>
-
-
-<!-- abhinav -->
