@@ -49,8 +49,8 @@ video {
 h1 {
   font-size: 4vw;
   margin-bottom: 2vw;
-  color: rgb(9, 44, 135);
-  -webkit-text-stroke: 1px gold;
+  color: rgb(4, 209, 255);
+  -webkit-text-stroke: 1px blue;
   font-style: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -143,7 +143,7 @@ form input[type="text"] {
 }
 
 .details .detail {
-  background-color: #f1f1f1;
+  background-color: white;
   padding: 2vw;
   font-size: 1.5vw;
   border-radius: 5px;
@@ -151,6 +151,7 @@ form input[type="text"] {
   display: flex; /* Make the detail a flex container */
   align-items: center; /* Center items vertically */
   justify-content: space-between; /* Space items horizontally */
+  opacity: 0.8;
 }
 
 .details .detail span {
